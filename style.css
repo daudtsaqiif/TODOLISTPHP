@@ -1,0 +1,90 @@
+.up{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 187, 0.7);
+    z-index: 9999999999999999;
+}
+
+.warapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    border-radius: 15px 50px 30px;
+    background: gray;
+    padding: 20px;
+    width: 350px;
+    min-height: 200px;
+    box-shadow: 0 0 10px gray;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    transition: 1s ease;
+}
+.blink {
+    margin-top: 20px;
+    animation: blinker 1s linear infinite;
+    font-size: 50px;
+    color: red;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+.container{
+    background: white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.nomor{
+    font-size: 3vh;
+}
+.to{
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    color: orange;
+}
+.act{
+    padding: 5px;
+    text-align: center;
+    font-size: 3vh;
+}
+.button{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.button a{
+    width: 150px;
+    margin-top: 10px;
+}
+.button i{
+    padding-right: 5px;
+}
+.delete{
+    margin-left: 10px;
+}
+.smngt{
+    display: flex;
+    margin-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    color: red;
+    animation: blinker .5s linear infinite;
+}
+.box:hover{
+    transform: scale(1.2);
+}
+
